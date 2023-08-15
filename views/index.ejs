@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <style>
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="middle">
+    <form action="/" method="post" enctype="multipart/form-data">
+      <h1>Multer </h1>
+      <input type="file" name="multi-files" accept="images/*" multiple>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
